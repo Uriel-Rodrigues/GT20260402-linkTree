@@ -8,9 +8,9 @@
 }
 
 body{
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/imagem/wp4694277-green-code-wallpapers.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/imagem/wp4694277-green-code-wallpapers.jpg"); */
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #mainA {
@@ -170,7 +170,7 @@ a{
     color: white;
     background-color: #008000;
     width: 200px;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,177 @@ a:hover{
 }
 
 footer{
-    padding-top: 30px;
     font-size: x-large;
     font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        min-height: 100dvh;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    body::before {
+        width: 300px;
+        height: 300px;
+        filter: blur(100px);
+    }
+
+    #containeGeral {
+        width: 100%;
+        max-width: 380px;
+
+        /* Adapta a altura à tela do celular */
+        height: 90dvh;
+        min-height: 500px;
+        max-height: 800px;
+
+        padding: 20px 15px;
+        gap: 15px;
+        border-radius: 30px;
+    }
+
+    header {
+        width: 100%;
+        padding: 5px;
+        gap: 15px;
+    }
+
+    #imgMe {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    #textMe {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #mainA {
+        width: 100%;
+        gap: 15px;
+    }
+
+    a {
+        width: 100%;
+        max-width: 260px;
+        min-height: 45px;
+        height: auto;
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 768px) {
+
+    body {
+        min-height: 100dvh;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    body::before {
+        width: 450px;
+        height: 450px;
+        filter: blur(140px);
+    }
+
+    #containeGeral {
+        width: 100%;
+        max-width: 500px;
+
+        height: 85dvh;
+        min-height: 550px;
+        max-height: 850px;
+
+        padding: 30px 25px;
+        gap: 25px;
+
+        border-radius: 35px;
+    }
+
+    header {
+        width: 100%;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    #imgMe {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    #textMe {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #mainA {
+        width: 100%;
+        gap: 18px;
+    }
+
+    a {
+        width: 100%;
+        max-width: 300px;
+        min-height: 50px;
+        height: auto;
+
+        padding: 10px 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
